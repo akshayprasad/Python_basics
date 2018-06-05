@@ -295,3 +295,65 @@ Using "not" before a boolean expression inverts it:
 print(not False) // Prints out True
 print((not False) == (False)) // Prints out False
 ```
+
+
+## Loops
+There are two types of loops in Python, for and while.
+
+### The "for" loop
+
+```js
+odds = [1, 3, 5, 7]
+for number in odds:
+    print(number) //outputs 1 3 5 6 in a seperate line
+```
+
+
+### range() vs xrange()
+
+<ul>
+<li>range() and xrange() are two functions that could be used to iterate a certain number of times in for loops in Python. </li>
+<li><b>Note: </b>In Python 3, there is no xrange , but the range function behaves like xrange in Python 2.</li>
+<li><b>Note: </b>If you want to write code that will run on both Python 2 and Python 3, you should use range().<li>
+</ul>
+
+<h3>range()</h3>
+<p>This returns a list of numbers created using range() function.</p>
+
+<h3>xrange()</h3>
+<p>This function returns the generator object that can be used to display numbers only by looping. Only particular range is displayed on demand and hence called “lazy evaluation“.</p>
+
+<h3>Both are implemented in different ways and have different characteristics associated with them. The points of comparisons are:</h3>
+<ul>
+<li>Return Type</li>
+<li>Memory</li>
+<li>Operation Usage</li>
+<li>Speed</li>
+</ul>
+
+
+<h3>Return Type</h3>
+<ul>
+<li>range() returns – the list as return type.</li>
+<li>xrange() returns – xrange() object.</li>
+</ul>
+
+```js
+# Python code to demonstrate range() vs xrange()
+# on basis of return type
+
+# initializing a with range()
+a = range(1,10)
+
+# initializing a with xrange()
+x = xrange(1,10000)
+
+# testing the type of a
+print ("The return type of range() is : ")
+print (a) //[1,2,3,4,5,6,7,8,9,10]
+
+# testing the type of x
+print ("The return type of xrange() is : ")
+print (x) //xrange(1, 10)
+
+```
