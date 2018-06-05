@@ -827,7 +827,7 @@ List Comprehensions is a very powerful tool, which creates a new list based on a
 
 For example, let's say we need to create a list of integers which specify the length of each word in a certain sentence, but only if the word is not the word "the".
 
-<h3>Before Serialization: </h3>
+<h3>Before list comprehension: </h3>
 
 ```js
 sentence = "the quick brown fox jumps over the lazy dog"
@@ -842,7 +842,7 @@ print(words)
 ['the', 'quick', 'brown', 'fox', 'jumps', 'over', 'the', 'lazy', 'dog']
 ```
 
-<h3>After Serialization: </h3>
+<h3>After list comprehension: </h3>
 
 ```js
 sentence = "the quick brown fox jumps over the lazy dog"
