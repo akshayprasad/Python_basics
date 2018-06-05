@@ -819,5 +819,37 @@ And the next number is... 10!
 And the next number is... 15!
 And the next number is... 2!
 
+```
 
+## List Comprehensions
+
+List Comprehensions is a very powerful tool, which creates a new list based on another list, in a single, readable line.
+
+For example, let's say we need to create a list of integers which specify the length of each word in a certain sentence, but only if the word is not the word "the".
+
+<h3>Before Serialization: </h3>
+
+```js
+sentence = "the quick brown fox jumps over the lazy dog"
+words = sentence.split()
+word_lengths = []
+for word in words:
+      if word != "the":
+          word_lengths.append(len(word))
+print(words)
+
+//outputs
+['the', 'quick', 'brown', 'fox', 'jumps', 'over', 'the', 'lazy', 'dog']
+```
+
+<h3>After Serialization: </h3>
+
+```js
+sentence = "the quick brown fox jumps over the lazy dog"
+words = sentence.split()
+word_lengths = [len(word) for word in words if word != "the"]
+print(words)
+
+//outputs
+['the', 'quick', 'brown', 'fox', 'jumps', 'over', 'the', 'lazy', 'dog']
 ```
