@@ -420,6 +420,7 @@ unlike languages like C,CPP.. we can use else for loops. When the loop condition
 </p>
 
 <h3>Example: </h3>
+
 ```js
 //Prints out 0,1,2,3,4 and then it prints "count value reached 5"
 
