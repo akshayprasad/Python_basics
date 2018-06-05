@@ -489,7 +489,7 @@ class MyClass:
         print("This is a message inside the class.")
 ```
 
-<h3>Now the variable "myobjectx" holds an object of the class "MyClass" that contains the variable and the function defined within the class called "MyClass".</h3>
+<p>Now the variable "myobjectx" holds an object of the class "MyClass" that contains the variable and the function defined within the class called "MyClass".</p>
 
 ### Accessing Object Variables
 
@@ -505,7 +505,7 @@ myobjectx = MyClass()
 print(myobjectx.variable) //prints blah
 ```
 
-<h4>You can create multiple different objects that are of the same class(have the same variables and functions defined). However, each object contains independent copies of the variables defined in the class. </h4>
+<p>You can create multiple different objects that are of the same class(have the same variables and functions defined). However, each object contains independent copies of the variables defined in the class. </p>
 
 ```js
 class MyClass:
