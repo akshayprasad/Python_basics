@@ -973,3 +973,76 @@ for i in range(20):
 0
 0
 ```
+
+## Sets
+
+<p>Sets are lists with no duplicate entries. Let's say you want to collect a list of words used in a paragraph:</p>
+
+```js
+
+print(set("my name is Eric and Eric is my name".split()))
+//outputs
+{'Eric', 'is', 'name', 'and', 'my'}
+
+a = set(["Jake", "John", "Eric"])
+print(a)
+//outputs
+{'Eric', 'John', 'Jake'}
+
+b = set(["John", "Jill"])
+print(b)
+//outputs
+{'John', 'Jill'}
+
+```
+
+<h3>The different methods are: </h3>
+<ul>
+<li>intersection()</li>
+<li>symmetric_difference()</li>
+<li>difference()</li>
+<li>union()</li>
+</ul>
+
+```js
+
+a = set(["Jake", "John", "Eric"])
+b = set(["John", "Jill"])
+
+print(a.intersection(b))
+print(b.intersection(a))
+
+//outputs 
+{'John'}
+{'John'}
+
+a = set(["Jake", "John", "Eric"])
+b = set(["John", "Jill"])
+
+print(a.symmetric_difference(b))
+print(b.symmetric_difference(a))
+
+//outputs
+{'Eric', 'Jake', 'Jill'}
+{'Eric', 'Jill', 'Jake'}
+
+
+a = set(["Jake", "John", "Eric"])
+b = set(["John", "Jill"])
+
+print(a.difference(b))
+print(b.difference(a))
+
+//Outputs
+{'Eric', 'Jake'}
+{'Jill'}
+
+a = set(["Jake", "John", "Eric"])
+b = set(["John", "Jill"])
+
+print(a.union(b))
+
+//Outputs
+{'Jill', 'Eric', 'John', 'Jake'}
+
+```
