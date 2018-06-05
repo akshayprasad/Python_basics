@@ -241,3 +241,50 @@ name = "John"
 if name in ["John", "Rick"]:
     print("Your name is either John or Rick.")
 ```
+
+<ul>
+<li>Python uses indentation to define code blocks, instead of brackets. </li>
+<li>The standard Python indentation is 4 spaces, although tabs and any other space size will work, as long as it is consistent. </li>
+<li>Notice that code blocks do not need any termination.</li>
+</ul>
+
+```js
+if <statement is="" true="">:
+    <do something="">
+    ....
+    ....
+elif <another statement="" is="" true="">: # else if
+    <do something="" else="">
+    ....
+    ....
+else:
+    <do another="" thing="">
+    ....
+    ....
+</do></do></another></do></statement>
+```
+
+Example:
+```js
+x = 'NA'
+if x == 'NA':
+    print("x equals NA!")
+else:
+    print("x does not equal to NA.")
+```
+
+A statement is evaulated as true if one of the following is correct: 
+<ol>
+<li> The "True" boolean variable is given, or calculated using an expression, such as an arithmetic comparison. </li>
+<li> An object which is not considered "empty" is passed. </li>
+</ol>
+
+
+### The 'is' operator
+Unlike the double equals operator "==", the "is" operator does not match the values of the variables, but the instances themselves.
+```js
+x = [3,4,5]
+y = [3,4,5]
+print(x == y) # Prints out True
+print(x is y) # Prints out False
+```
