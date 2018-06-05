@@ -523,3 +523,70 @@ myobjecty.variable = "yackity"
 print(myobjectx.variable) //prints blah
 print(myobjecty.variable) //prints yackity
 ```
+
+
+## Dictionaries
+<p>A dictionary is a data type similar to arrays, but works with keys and values instead of indexes. Each value stored in a dictionary can be accessed using a key, which is any type of object (a string, a number, a list, etc.) instead of using its index to address it.</p>
+
+```js
+phonebook = {}
+phonebook["John"] = 938477566
+phonebook["Jack"] = 938377264
+phonebook["Jill"] = 947662781
+print(phonebook) 
+
+//Outputs {'John': 938477566, 'Jack': 938377264, 'Jill': 947662781}
+```
+
+<p>Alternatively, a dictionary can be initialized with the same values in the following notation:</p>
+
+```js
+phonebook = {
+    "John" : 938477566,
+    "Jack" : 938377264,
+    "Jill" : 947662781
+}
+print(phonebook)
+
+//Outputs {'John': 938477566, 'Jack': 938377264, 'Jill': 947662781}
+```
+
+<h3>Iterating over dictionaries</h3>
+<p>Dictionaries can be iterated over, just like a list. However, a dictionary, unlike a list, does not keep the order of the values stored in it. To iterate over key value pairs, use the following syntax:</p>
+
+```js
+phonebook = {"John" : 938477566,"Jack" : 938377264,"Jill" : 947662781}
+for name, number in phonebook.items():
+    print("Phone number of %s is %d" % (name, number))
+
+//outputs
+//Phone number of John is 938477566
+//Phone number of Jack is 938377264
+//Phone number of Jill is 947662781
+```
+
+<h3>Removing a value</h3>
+<p>To remove a specified index, use either one of the following notations:</p>
+
+```js
+phonebook = {
+   "John" : 938477566,
+   "Jack" : 938377264,
+   "Jill" : 947662781
+}
+del phonebook["John"]
+print(phonebook);
+
+//oputputs {'Jack': 938377264, 'Jill': 947662781}
+
+
+phonebook = {
+   "John" : 938477566,
+   "Jack" : 938377264,
+   "Jill" : 947662781
+}
+phonebook.pop("John")
+print(phonebook)
+
+//oputputs {'Jack': 938377264, 'Jill': 947662781}
+```
