@@ -80,3 +80,30 @@ a,b = 2,4;
 print(a,b) //outputs 2,4.
 ```
 
+
+## Lists
+Lists are very similar to arrays. They can contain any type of variable, and they can contain as many variables as you wish. Lists can also be iterated over in a very simple manner. Here is an example of how to build a list.
+
+```js
+listVariable = []
+listVariable.append(1)
+listVariable.append(2)
+listVariable.append(3)
+print(listVariable[0]) # prints 1
+print(listVariable[1]) # prints 2
+print(listVariable[2]) # prints 3
+
+# prints out 1,2,3
+for x in listVariable:
+    print(x)
+
+//outputs 1 2 and 3 in a seperate line.
+```
+
+## Basic operators
+Just as any other programming languages, the addition, subtraction, multiplication, and division operators can be used with numbers.
+
+```js
+print(1+2+3/3) //Outputs 2.
+```
+
