@@ -210,3 +210,34 @@ print(stringVariable[::-1]) //Ouputs !dlrow olleH
 
 print(stringVariable.split(" ")) //Outputs ['Hello', 'world!']
 ```
+
+## Conditions
+Python uses boolean variables to evaluate conditions. The boolean values True and False are returned when an expression is compared or evaluated.
+
+```js
+x = 2
+print(x == 2) # prints out True
+print(x == 3) # prints out False
+print(x < 3) # prints out True
+```
+
+### Boolean operators
+
+The "and" and "or" boolean operators allow building complex boolean expressions.
+```js
+name = "John"
+age = 23
+if name == "John" and age == 23:
+    print("Your name is John, and you are also 23 years old.")
+
+if name == "John" or name == "Rick":
+    print("Your name is either John or Rick.")
+```
+
+### The "in" operator
+The "in" operator could be used to check if a specified object exists within an iterable object container, such as a list:
+```js
+name = "John"
+if name in ["John", "Rick"]:
+    print("Your name is either John or Rick.")
+```
