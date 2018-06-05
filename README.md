@@ -488,3 +488,19 @@ class MyClass:
     def function(self):
         print("This is a message inside the class.")
 ```
+
+<h3>Now the variable "myobjectx" holds an object of the class "MyClass" that contains the variable and the function defined within the class called "MyClass".</h3>
+
+### Accessing Object Variables
+
+```js
+class MyClass:
+    variable = "blah"
+
+    def function(self):
+        print("This is a message inside the class.")
+
+myobjectx = MyClass()
+
+print(myobjectx.variable)
+```
