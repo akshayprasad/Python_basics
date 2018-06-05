@@ -478,3 +478,13 @@ my_function() //prints Hello From My Function!
 <li>Objects get their variables and functions from classes. Classes are essentially a template to create your objects.</li>
 </ul>
 </p>
+
+<h3>Very basic example is that:</h3>
+
+```js
+class MyClass:
+    variable = "blah"
+
+    def function(self):
+        print("This is a message inside the class.")
+```
