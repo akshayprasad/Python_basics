@@ -314,7 +314,7 @@ for number in odds:
 <ul>
 <li>range() and xrange() are two functions that could be used to iterate a certain number of times in for loops in Python. </li>
 <li><b>Note: </b>In Python 3, there is no xrange , but the range function behaves like xrange in Python 2.</li>
-<li><b>Note: </b>If you want to write code that will run on both Python 2 and Python 3, you should use range().<li>
+<li><b>Note: </b>If you want to write code that will run on both Python 2 and Python 3, you should use range().</li>
 </ul>
 
 <h3>range()</h3>
@@ -356,4 +356,85 @@ print (a) //[1,2,3,4,5,6,7,8,9,10]
 print ("The return type of xrange() is : ")
 print (x) //xrange(1, 10)
 
+```
+
+<h3>Example:</h3>
+
+```js
+//Prints out the numbers 0,1,2,3,4
+for x in range(5):
+    print(x)
+
+//Prints out 3,4,5
+for x in range(3, 6):
+    print(x)
+
+//Prints out 3,5,7
+for x in range(3, 8, 2):
+    print(x)
+```
+
+## "while" loops
+<p>While loops repeat as long as a certain boolean condition is met.</p>
+
+```js
+//prints out 0,1,2,3,4
+
+count = 0
+while count < 5:
+    print(count)
+    count += 1  # This is the same as count = count + 1
+```
+
+### "break" and "continue" statements
+<h3>break </h3>
+<p>is used to exit a for loop or a while loop</p>
+
+<h3>continue</h3>
+<p>is used to skip the current block</p>
+
+
+```js
+//Prints out 0,1,2,3,4
+
+count = 0
+while True:
+    print(count)
+    count += 1
+    if count >= 5:
+        break
+
+# Prints out only odd numbers - 1,3,5,7,9
+for x in range(10):
+    # Check if x is even
+    if x % 2 == 0:
+        continue
+    print(x)
+```
+
+
+<h2>Important:</h2>
+<h3>can we use "else" clause for loops?</h3>
+<p style="color: red;">
+unlike languages like C,CPP.. we can use else for loops. When the loop condition of "for" or "while" statement fails then code part in "else" is executed. If break statement is executed inside for loop then the "else" part is skipped. Note that "else" part is executed even if there is a continue statement.
+</p>
+
+<h3>Example: </h3>
+```js
+//Prints out 0,1,2,3,4 and then it prints "count value reached 5"
+
+count=0
+while(count<5):
+    print(count)
+    count +=1
+else:
+    print("count value reached %d" %(count))
+
+//Prints out 1,2,3,4
+for i in range(1, 10):
+    if(i%5==0):
+        break
+    print(i)
+else:
+    print("this is not printed because for loop is terminated because of break but not due to fail in condition")
 ```
