@@ -105,5 +105,32 @@ Just as any other programming languages, the addition, subtraction, multiplicati
 
 ```js
 print(1+2+3/3) //Outputs 2.
+
+remainder = 11 % 3
+print(remainder) //Outputs 2
+
+squared = 7 ** 2
+cubed = 2 ** 3
+
+print(squared) //outputs 49
+print(cubed); //ouputs 8
 ```
 
+### using operators with string
+```js
+helloworld = "hello" + " " + "world"
+print(helloworld) //outputs hello world
+
+surprisehellos = "hello" * 10
+print(surprisehellos) //outputs hellohellohellohellohellohellohellohellohellohello
+```
+
+### using operators with Lists
+```js
+even = [2,4,6,8]
+odd = [1,3,5,7]
+allNumbers = odd + even
+print(allNumbers) //outputs [1, 3, 5, 7, 2, 4, 6, 8]
+
+print([5,6] * 3) //outputs [5, 6, 5, 6, 5, 6]
+```
