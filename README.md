@@ -72,3 +72,11 @@ There are additional variations on defining strings that make it easier to inclu
 <a href = 'https://docs.python.org/3/tutorial/introduction.html#strings'>For more on Strings</a>
 
 
+#### Operator assignment
+Assignments can be done on more than one variable "simultaneously" on the same line like this:
+
+```js
+a,b = 2,4;
+print(a,b) //outputs 2,4.
+```
+
