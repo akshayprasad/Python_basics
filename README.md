@@ -16,7 +16,7 @@ print("This line will be printed.");
 ### Indentation
 Python uses indentation for blocks, instead of curly braces. Both tabs and spaces are supported, but the standard indentation requires standard Python code to use four spaces
 ```js
-if name == 'Akshay':
+if name == 'Python':
         print(name);
 ```
 
@@ -44,5 +44,31 @@ print(integerValue); //Outputs 10
 floatValue = float(integerValue);
 print(floatValue); //Outputs 10.0
 ```
+
+### Strings
+Strings can be defined either in a double quote or a single quote.
+
+```js
+stringValueSingleQuote = 'python';
+stringValueDoubleQuote = "python";
+
+print(stringValueSingleQuote) //outputs python
+print(stringValueDoubleQuote) //outputs python
+```
+
+```js
+one = 1
+two = 2
+three = one + two
+print(three) //outputs 3
+
+hello = "hello"
+world = "world"
+helloworld = hello + " " + world
+print(helloworld) //outputs hello world
+```
+
+There are additional variations on defining strings that make it easier to include things such as carriage returns, backslashes and Unicode characters.
+<a href = 'https://docs.python.org/3/tutorial/introduction.html#strings'>For more on Strings</a>
 
 
