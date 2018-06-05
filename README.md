@@ -461,6 +461,7 @@ block_head:
 
 
 <h3>Functions in python are defined using the block keyword "def", followed with the function's name as the block's name.</h3>
+
 ```js
 def my_function():
     print("Hello From My Function!")
