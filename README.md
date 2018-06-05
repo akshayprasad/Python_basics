@@ -22,3 +22,27 @@ if name == 'Akshay':
 
 
 ## Variables and Types
+<ul>
+    <li>Python is completely object oriented, and not "statically typed".</li>
+    <li>No need to declare variables before using them or declare their type.</li>
+    <li>Every variable in Python is an object.</li>
+</ul>
+
+### Numbers
+Python supports two types and they are:
+<ol>
+<li> Integer </li>
+<li> Floating </li>
+</ol>
+
+```js
+Integer:
+
+intergerValue = 10;
+print(integerValue); //Outputs 10
+
+floatValue = float(integerValue);
+print(floatValue); //Outputs 10.0
+```
+
+
