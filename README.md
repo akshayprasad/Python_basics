@@ -701,3 +701,28 @@ dir(urllib)
 */
 
 ```
+
+
+## Numpy Arrays
+<p>Numpy arrays are great alternatives to Python Lists. Some of the key advantages of Numpy arrays are that they are fast, easy to work with, and give users the opportunity to perform calculations across entire arrays.</p>
+
+Example:
+
+```js
+//Create 2 new lists numbersOdd and numbersEven
+numbersOdd = [1, 3, 5, 7]
+numbersEven = [2,4,6,8]
+
+//Import the numpy package as np
+import numpy as np
+
+# Create 2 numpy arrays from height and weight
+np_numbersOdd = np.array(numbersOdd)
+np_numbersEven = np.array(numbersEven)
+
+print(type(np_numbersEven))
+
+Outputs:
+<class 'numpy.ndarray'>
+<class 'numpy.ndarray'>
+```
