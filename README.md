@@ -151,7 +151,7 @@ print("%s latest version is %f" % (name, version)) //Outputs python latest versi
 List can be also be represented using %s, basically object which is not a string can be formatted using the %s operator as well.
 ```js
 listVariable = [1,2,3]
-print("A list: %s" % listVariable)
+print("A list: %s" % listVariable) //Outputs [1,2,3]
 ```
 
 ### Important formatters to be remembered
@@ -160,5 +160,5 @@ print("A list: %s" % listVariable)
   <li>%d - Integers</li>
   <li>%f - Floating point numbers</li>
   <li>%.<number of digits>f - Floating point numbers with a fixed amount of digits to the right of the dot.</li>
-  <li>%x/%X - Integers in hex representation (lowercase/uppercase)</li>
+  <li>%x / %X - Integers in hex representation (lowercase/uppercase)</li>
 </ul>
