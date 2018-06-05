@@ -196,3 +196,17 @@ print(stringVariable.startswith('python')) //Outputs True
 print(stringVariable.endswith('syntax')) //Outputs True
 
 ```
+
+### Special list operations
+
+```js
+
+stringVariable = "Hello world!"
+print(stringVariable[3:7]) or print(stringVariable[3:7:1])//Outputs lo w
+
+print(stringVariable[3:7:2]) //Outputs l
+
+print(stringVariable[::-1]) //Ouputs !dlrow olleH
+
+print(stringVariable.split(" ")) //Outputs ['Hello', 'world!']
+```
