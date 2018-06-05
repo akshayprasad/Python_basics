@@ -162,3 +162,37 @@ print("A list: %s" % listVariable) //Outputs [1,2,3]
   <li>%.<number of digits>f - Floating point numbers with a fixed amount of digits to the right of the dot.</li>
   <li>%x / %X - Integers in hex representation (lowercase/uppercase)</li>
 </ul>
+
+## Basic String Operations
+Strings are bits of text. They can be defined as anything between quotes
+
+The multiple methods(iun-built) for string are:
+<ul>
+<li>len()</li>
+<li>index()</li>
+<li>count()</li>
+<li>upper()</li>
+<li>lower()</li>
+<li>startswith()</li>
+<li>endswith()</li>
+<li>split()</li>
+</ul>
+
+```js
+stringVariable = "python learning and knowing it's basic syntax."
+
+print(len(stringVariable)) //Outputs 46
+
+print(stringVariable.index('o')) //Outputs 4
+
+print(stringVariable.count('o')) //outputs 2
+
+print(stringVariable.upper()) //Outputs the string in uppercase
+
+print(stringVariable.lower()) //Outputs the string in lowercase
+
+print(stringVariable.startswith('python')) //Outputs True
+
+print(stringVariable.endswith('syntax')) //Outputs True
+
+```
