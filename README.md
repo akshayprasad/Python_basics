@@ -502,5 +502,24 @@ class MyClass:
 
 myobjectx = MyClass()
 
-print(myobjectx.variable)
+print(myobjectx.variable) //prints blah
+```
+
+<h4>You can create multiple different objects that are of the same class(have the same variables and functions defined). However, each object contains independent copies of the variables defined in the class. </h4>
+
+```js
+class MyClass:
+    variable = "blah"
+
+    def function(self):
+        print("This is a message inside the class.")
+
+myobjectx = MyClass()
+myobjecty = MyClass()
+
+myobjecty.variable = "yackity"
+
+# Then print out both values
+print(myobjectx.variable) //prints blah
+print(myobjecty.variable) //prints yackity
 ```
