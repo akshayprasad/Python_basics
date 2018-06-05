@@ -288,3 +288,10 @@ y = [3,4,5]
 print(x == y) # Prints out True
 print(x is y) # Prints out False
 ```
+
+### The "not" operator
+Using "not" before a boolean expression inverts it:
+```js
+print(not False) // Prints out True
+print((not False) == (False)) // Prints out False
+```
