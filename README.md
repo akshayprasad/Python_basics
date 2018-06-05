@@ -134,3 +134,31 @@ print(allNumbers) //outputs [1, 3, 5, 7, 2, 4, 6, 8]
 
 print([5,6] * 3) //outputs [5, 6, 5, 6, 5, 6]
 ```
+
+## String Formatting
+Python uses C-style string formatting to create new, formatted strings. 
+The "%" operator is used to format a set of variables enclosed in a "tuple" (a fixed size list), together with a format string, which contains normal text together with "argument specifiers", special symbols like "%s" and "%d".
+
+```js
+name = "python"
+print("World of, %s!" % name) //Outputs World of python
+
+name = "python"
+version = 3.5.1
+print("%s latest version is %f" % (name, version)) //Outputs python latest version is 3.5.1
+```
+
+List can be also be represented using %s, basically object which is not a string can be formatted using the %s operator as well.
+```js
+listVariable = [1,2,3]
+print("A list: %s" % listVariable)
+```
+
+### Important formatters to be remembered
+<ul>
+  <li>%s - String (or any object with a string representation, like numbers)</li>
+  <li>%d - Integers</li>
+  <li>%f - Floating point numbers</li>
+  <li>%.<number of digits>f - Floating point numbers with a fixed amount of digits to the right of the dot.</li>
+  <li>%x/%X - Integers in hex representation (lowercase/uppercase)</li>
+</ul>
