@@ -15,9 +15,10 @@ print("This line will be printed.");
 
 ### Indentation
 Python uses indentation for blocks, instead of curly braces. Both tabs and spaces are supported, but the standard indentation requires standard Python code to use four spaces
-
+```js
 if name == 'Akshay':
         print(name);
+```
 
 
 ## Variables and Types
