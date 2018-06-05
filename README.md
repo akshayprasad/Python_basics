@@ -590,3 +590,114 @@ print(phonebook)
 
 //oputputs {'Jack': 938377264, 'Jill': 947662781}
 ```
+
+
+## Modules and Packages
+<p>In programming, a module is a piece of software that has a specific functionality. For example, when building a ping pong game, one module would be responsible for the game logic, and
+another module would be responsible for drawing the game on the screen. Each module is a different file, which can be edited separately.</p>
+
+### Exploring built-in modules
+<a href="https://docs.python.org/3/library/">Check out the complete list of built-in modules in the python standard library.</a>
+
+<h3>Two very important functions come in handy when exploring modules in Python:</h3>
+<ul>
+<li>dir</li>
+<li>help</li>
+</ul>
+
+<p>We can look for which functions are implemented in each module by using the dir function:</p>
+
+```js
+import urllib;
+dir(urllib)
+
+//Outputs
+/* 
+['ContentTooShortError',
+ 'FancyURLopener',
+ 'MAXFTPCACHE',
+ 'URLopener',
+ '__all__',
+ '__builtins__',
+ '__doc__',
+ '__file__',
+ '__name__',
+ '__package__',
+ '__version__',
+ '_ftperrors',
+ '_get_proxies',
+ '_get_proxy_settings',
+ '_have_ssl',
+ '_hexdig',
+ '_hextochr',
+ '_hostprog',
+ '_is_unicode',
+ '_localhost',
+ '_noheaders',
+ '_nportprog',
+ '_passwdprog',
+ '_portprog',
+ '_queryprog',
+ '_safe_map',
+ '_safe_quoters',
+ '_tagprog',
+ '_thishost',
+ '_typeprog',
+ '_urlopener',
+ '_userprog',
+ '_valueprog',
+ 'addbase',
+ 'addclosehook',
+ 'addinfo',
+ 'addinfourl',
+ 'always_safe',
+ 'basejoin',
+ 'c',
+ 'ftpcache',
+ 'ftperrors',
+ 'ftpwrapper',
+ 'getproxies',
+ 'getproxies_environment',
+ 'getproxies_macosx_sysconf',
+ 'i',
+ 'localhost',
+ 'main',
+ 'noheaders',
+ 'os',
+ 'pathname2url',
+ 'proxy_bypass',
+ 'proxy_bypass_environment',
+ 'proxy_bypass_macosx_sysconf',
+ 'quote',
+ 'quote_plus',
+ 'reporthook',
+ 'socket',
+ 'splitattr',
+ 'splithost',
+ 'splitnport',
+ 'splitpasswd',
+ 'splitport',
+ 'splitquery',
+ 'splittag',
+ 'splittype',
+ 'splituser',
+ 'splitvalue',
+ 'ssl',
+ 'string',
+ 'sys',
+ 'test',
+ 'test1',
+ 'thishost',
+ 'time',
+ 'toBytes',
+ 'unquote',
+ 'unquote_plus',
+ 'unwrap',
+ 'url2pathname',
+ 'urlcleanup',
+ 'urlencode',
+ 'urlopen',
+ 'urlretrieve']
+*/
+
+```
