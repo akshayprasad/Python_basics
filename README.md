@@ -726,3 +726,12 @@ Outputs:
 <class 'numpy.ndarray'>
 <class 'numpy.ndarray'>
 ```
+
+## Pandas Basics
+
+### Pandas DataFrames
+<ul>
+<li>Pandas is a high-level data manipulation tool developed by Wes McKinney. </li>
+<li>It is built on the Numpy package and its key data structure is called the <b>DataFrame</b>. </li>
+<li>DataFrames allow you to store and manipulate tabular data in rows of observations and columns of variables.</li>
+</ul>
