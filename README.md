@@ -468,3 +468,13 @@ def my_function():
 
 my_function() //prints Hello From My Function!
 ```
+
+
+# Import feature
+## Classes and Objects
+<p>
+<ul>
+<li>Objects are an encapsulation of variables and functions into a single entity. </li>
+<li>Objects get their variables and functions from classes. Classes are essentially a template to create your objects.</li>
+</ul>
+</p>
