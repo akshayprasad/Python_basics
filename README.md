@@ -1046,3 +1046,29 @@ print(a.union(b))
 {'Jill', 'Eric', 'John', 'Jake'}
 
 ```
+
+## Serialization
+<p>Data serialization is the concept of converting structured data into a format that allows it to be shared or stored in such a way that its original structure to be recovered. In some cases, the secondary intention of data serialization is to minimize the size of the serialized data which then minimizes disk space or bandwidth requirements.</p>
+
+### Pickle
+<p>The native data serialization module for Python is called <a href='https://docs.python.org/2/library/pickle.html'>Pickle<a/>.</p>
+
+Example:
+
+```js
+import pickle
+
+#Here's an example dict
+grades = { 'Alice': 89, 'Bob': 72, 'Charles': 87 }
+
+#Use dumps to convert the object to a serialized string
+serial_grades = pickle.dumps( grades )
+
+#Use loads to de-serialize an object
+received_grades = pickle.loads( serial_grades )
+
+//Outputs
+b'\x80\x03}q\x00(X\x07\x00\x00\x00Charlesq\x01KWX\x03\x00\x00\x00Bobq\x02KHX\x05\x00\x00\x00Aliceq\x03KYu.'
+{'Charles': 87, 'Bob': 72, 'Alice': 89}
+
+```
