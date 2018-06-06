@@ -1074,3 +1074,27 @@ b'\x80\x03}q\x00(X\x07\x00\x00\x00Charlesq\x01KWX\x03\x00\x00\x00Bobq\x02KHX\x05
 {'Charles': 87, 'Bob': 72, 'Alice': 89}
 
 ```
+
+## Partial functions
+<p>You can create partial functions in python by using the partial function from the <b>functools</b> library.</p>
+<p>Partial functions allow one to derive a function with x parameters to a function with fewer parameters and fixed values set for the more limited function.</p>
+
+Example:
+
+```js
+from functools import partial
+
+def multiply(x,y):
+        return x * y
+
+# create a new function that multiplies by 2
+dbl = partial(multiply,2)
+print(dbl(4))
+
+//outputs
+8
+
+<b>Note:</b>
+<p>An important note: the default values will start replacing variables from the left. The 2 will replace x. y will equal 4 when dbl(4) is called. It does not make a difference in this example, but it does in the example below.</p>
+
+```
