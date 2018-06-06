@@ -1191,3 +1191,44 @@ print_msg(9)
 Without the nonlocal keyword, the output would be "3 9", however, with its usage, we get "3 3", that is the value of the "number" variable gets modified.
 
 <b>ADVANTAGE</b> : Closures can avoid use of global variables and provides some form of data hiding.(Eg. When there are few methods in a class, use closures instead).
+
+## Inheritance
+<ul>
+<li>Classes can inherit from other classes. </li>
+<li>A class can inherit attributes and behaviour methods from another class, called the superclass. </li>
+<li>A class which inherits from a superclass is called a subclass, also called heir class or child class. </li>
+<li>Superclasses are sometimes called ancestors as well. There exists a hierarchy relationship between classes. It's similar to relationships or categorizations that we know from real life. </li>
+</ul>
+
+```js
+
+class Person:
+
+    def __init__(self, first, last):
+        self.firstname = first
+        self.lastname = last
+
+    def Name(self):
+        return self.firstname + " " + self.lastname
+
+class Employee(Person):
+
+    def __init__(self, first, last, staffnum):
+        Person.__init__(self,first, last)
+        self.staffnumber = staffnum
+
+    def GetEmployee(self):
+        return self.Name() + ", " +  self.staffnumber
+
+x = Person("Marge", "Simpson")
+y = Employee("Homer", "Simpson", "1007")
+
+print(x.Name())
+print(y.GetEmployee())
+
+
+//Output
+Marge Simpson
+Homer Simpson, 1007
+
+```
