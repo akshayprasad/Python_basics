@@ -305,7 +305,7 @@ There are two types of loops in Python, for and while.
 ```js
 odds = [1, 3, 5, 7]
 for number in odds:
-    print(number) //outputs 1 3 5 6 in a seperate line
+    print(number) //outputs 1 3 5 7 in a seperate line
 ```
 
 
