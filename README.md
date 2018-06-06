@@ -1232,3 +1232,19 @@ Marge Simpson
 Homer Simpson, 1007
 
 ```
+
+
+<p>The __init__ method of our Employee class explicitly invokes the __init__method of the Person class. We could have used super instead. super().__init__(first, last) is automatically replaced by a call to the superclasses method, in this case __init__: </p>
+
+```js
+def __init__(self, first, last, staffnum):
+        super().__init__(first, last)
+        self.staffnumber = staffnum
+```
+
+
+<b>Note: </b>
+<p>Please note that we used super()) without arguments. This is only possible in Python3. We could have written "super(Employee, self).__init__(first, last, age)" which still works in Python3 and is compatible with Python2.</p>
+
+
+<h2>To be continued........................</h2>
