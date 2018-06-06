@@ -1144,3 +1144,50 @@ print(dir(Vehicle))
 '__sizeof__', '__str__', '__subclasshook__', '__weakref__', 
 'color', 'description', 'kind', 'name', 'value']
 ```
+
+## Closures
+<p>A Closure is a function object that remembers values in enclosing scopes even if they are not present in memory.</p>
+
+<p>Firstly, a Nested Function is a function defined inside another function. It's very important to note that the nested functions can access the variables of the enclosing scope. However, at least in python, they are only readonly. However, one can use the <b>"nonlocal"</b> keyword explicitly with these variables in order to modify them.</p>
+
+<h3>Before using nonlocal</h3>
+
+```js
+def transmit_to_space(message):
+    "This is the enclosing function"
+    def data_transmitter():
+        "The nested function"
+        print(message)
+
+    data_transmitter()
+
+print(transmit_to_space("Test message"))
+
+//Output
+Test message
+None
+```
+
+
+<h3>After using nonlocal</h3>
+
+```js
+def print_msg(number):
+    def printer():
+        "Here we are using the nonlocal keyword"
+        nonlocal number
+        number=3
+        print(number)
+    printer()
+    print(number)
+
+print_msg(9)
+
+//Outputs
+3
+3
+```
+
+Without the nonlocal keyword, the output would be "3 9", however, with its usage, we get "3 3", that is the value of the "number" variable gets modified.
+
+<b>ADVANTAGE</b> : Closures can avoid use of global variables and provides some form of data hiding.(Eg. When there are few methods in a class, use closures instead).
