@@ -1098,3 +1098,44 @@ print(dbl(4))
 
 Note:
 An important note: the default values will start replacing variables from the left. The 2 will replace x. y will equal 4 when dbl(4) is called. It does not make a difference in this example, but it does in the example above.
+
+## Code Introspection
+
+<p>Code introspection is the ability to examine classes, functions and keywords to know what they are, what they do and what they know.</p>
+
+Python provides several functions and utilities for code introspection.
+<ul>
+<li>help()</li>
+<li>dir()</li>
+<li>hasattr()</li>
+<li>id()</li>
+<li>type()</li>
+<li>repr()</li>
+<li>callable()</li>
+<li>issubclass()</li>
+<li>isinstance()</li>
+<li>__doc__</li>
+<li>__name__</li>
+</ul>
+
+<b>Note:</b>
+Often the most important one is the help function, since you can use it to find what other functions do.
+
+```js
+# Define the Vehicle class
+class Vehicle:
+    name = ""
+    kind = "car"
+    color = ""
+    value = 100.00
+    def description(self):
+        desc_str = "%s is a %s %s worth $%.2f." % (self.name, self.color, self.kind, self.value)
+        return desc_str
+
+//Print a list of all attributes of the Vehicle class.
+print(dir(Vehicle))
+
+
+//Outputs
+['__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__gt__', '__hash__', '__init__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', 'color', 'description', 'kind', 'name', 'value']
+```
