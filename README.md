@@ -1094,7 +1094,7 @@ print(dbl(4))
 //outputs
 8
 
-<b>Note:</b>
-<p>An important note: the default values will start replacing variables from the left. The 2 will replace x. y will equal 4 when dbl(4) is called. It does not make a difference in this example, but it does in the example below.</p>
+Note:
+An important note: the default values will start replacing variables from the left. The 2 will replace x. y will equal 4 when dbl(4) is called. It does not make a difference in this example, but it does in the example below.
 
 ```
